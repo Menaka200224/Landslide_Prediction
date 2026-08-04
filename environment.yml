@@ -1,0 +1,30 @@
+name: landslide-lk
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - geopandas
+  - rasterio
+  - rioxarray
+  - xarray
+  - shapely
+  - pyproj
+  - fiona
+  - rasterstats
+  - richdem
+  - scikit-learn
+  - xgboost
+  - pandas
+  - numpy
+  - scipy
+  - matplotlib
+  - jupyterlab
+  - ipykernel
+  - mapclassify        # natural breaks (Jenks) for susceptibility map classing
+  - pyarrow            # GeoParquet read/write
+  - tqdm
+  - pip
+  - pip:
+      - jenkspy
+      - optuna
+      - whitebox

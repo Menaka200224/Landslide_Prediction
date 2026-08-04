@@ -1,0 +1,48 @@
+# Data — never commit raw or processed geodata, document sources instead
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Large outputs — keep small final maps only if you choose to; everything else stays local
+outputs/susceptibility_maps/*
+!outputs/susceptibility_maps/.gitkeep
+
+# Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/*
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Environments
+.env
+.venv/
+venv/
+env/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Geo-specific junk
+*.aux.xml
+*.ovr
+*.lock
+
+# Large binary formats — track via DVC/Git-LFS if you adopt one, not raw git
+*.tif
+*.tiff
+*.img
+*.shp
+*.shx
+*.dbf
+*.gpkg
+*.parquet
+!docs/**/*.png
